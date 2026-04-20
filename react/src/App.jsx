@@ -13,7 +13,6 @@ function App() {
         .catch(err => console.error(err));
     }
   }, [nombre]);
-
   return (
     <>
       <h1>Pokedex</h1>
@@ -23,7 +22,7 @@ function App() {
           <p>Nombre: {data.name}</p>
           <p>ID: {data.id}</p>
           <img src={data.sprites.other["official-artwork"].front_default} alt={data.name} />
-          <p>Tipo/s: {data.types[0].type.name}</p>
+          <p>Tipo/s: {data.types[0].type.name} {data.types[1] && data.types[1].type.name}</p>
           <p>Peso: {data.weight / 10} kg</p>
           <p>Altura: {data.height / 10} m</p>
 
