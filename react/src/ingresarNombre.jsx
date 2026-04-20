@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './ingresarNombre.css'
 
 function IngresarNombre({ onNombreChange }) {
   const [nombre, setNombre] = useState('');
