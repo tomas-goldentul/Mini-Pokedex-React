@@ -16,8 +16,9 @@ function IngresarNombre({ onNombreChange }) {
         type="text"
         value={nombre}
         onChange={handleChange}
+        placeholder='Ingresa nombre o ID de un pokemon'
       />
-      <p>{nombre}</p>
+      <p></p>
     </>
   );
 }
