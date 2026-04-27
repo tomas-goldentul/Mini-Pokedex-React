@@ -11,16 +11,17 @@ function App() {
       fetch(`https://pokeapi.co/api/v2/pokemon/${nombre.toLowerCase()}/`)
         .then(res => res.json())
         .then(json => setData(json))
-        .catch(err => console.error('ERROR '));
+        .catch(err => setData(null) );
     }
   }, [nombre]);
-  return (
+  
+  return(
     <>
     <h1>Pokedex</h1>
       <img src="https://fontmeme.com/permalink/260422/95136b1b.png" alt=""/>
       <IngresarNombre onNombreChange={setNombre} />
-      
       {data && (
+
         <div class = "Display_Pokemon">
           <div>
           <p>Nombre: {data.name}</p>
@@ -32,6 +33,7 @@ function App() {
           </div>
         </div>
       )}
+      
     </>
   );
 }
