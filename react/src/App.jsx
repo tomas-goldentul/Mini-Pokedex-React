@@ -37,8 +37,8 @@ function App() {
               Tipo/s: {data.types[0].type.name}{" "}
               {data.types[1] && data.types[1].type.name}
             </p>
-            <p>🏋️Peso: {data.weight / 10} kg</p>
-            <p>📏Altura: {data.height / 10} m</p>
+            <p>Peso: {data.weight / 10} kg</p>
+            <p>Altura: {data.height / 10} m</p>
           </div>
         </div>
       ) :(
