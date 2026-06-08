@@ -44,7 +44,7 @@ function App() {
       ) :(
          nombre && (
         <>
-          <p sty le={{ color: "red" }}>Error: no se encontraron datos del Pokémon</p>
+          <p sty le={{ color: "red" }}>Error: no se encontraron datos cargados del Pokémon</p>
           <img src="https://i.pinimg.com/originals/46/58/90/465890252b39cc9101e3180c9f735a6e.gif" alt="" id='pikachu'/>
         </>
 
