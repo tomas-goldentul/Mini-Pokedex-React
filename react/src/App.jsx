@@ -28,7 +28,7 @@ function App() {
         <div className="Display_Pokemon">
           <div>
             <p>Nombre: {data.name}</p>
-            <p>ID: {data.id}</p>
+            <p>Id: {data.id}</p>
             <img
               src={data.sprites.other["official-artwork"].front_default}
               alt={data.name}
