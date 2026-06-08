@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   const [nombre, setNombre] = useState('');
   const [data, setData] = useState(null);
-function sumar(){
+function restar(){
   return 1+1;
 }
   useEffect(() => {
