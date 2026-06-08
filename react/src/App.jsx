@@ -5,7 +5,9 @@ import './App.css'
 function App() {
   const [nombre, setNombre] = useState('');
   const [data, setData] = useState(null);
-
+function sumar(){
+  return 1+1;
+}
   useEffect(() => {
     if (nombre) {
       fetch(`https://pokeapi.co/api/v2/pokemon/${nombre.toLowerCase()}/`)
@@ -27,7 +29,7 @@ function App() {
       {data ? (
         <div className="Display_Pokemon">
           <div>
-            <p>Nombre: {data.name}</p>
+            <p>Nommbre: {data.name}</p>
             <p>Id: {data.id}</p>
             <img
               src={data.sprites.other["official-artwork"].front_default}
