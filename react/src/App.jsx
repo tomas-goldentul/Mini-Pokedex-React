@@ -27,7 +27,7 @@ function App() {
       {data ? (
         <div className="Display_Pokemon">
           <div>
-            <p>Nombre: {data.name}</p>
+            <p>Nommbre: {data.name}</p>
             <p>Id: {data.id}</p>
             <img
               src={data.sprites.other["official-artwork"].front_default}
