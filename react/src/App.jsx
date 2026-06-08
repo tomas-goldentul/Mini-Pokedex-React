@@ -5,7 +5,9 @@ import './App.css'
 function App() {
   const [nombre, setNombre] = useState('');
   const [data, setData] = useState(null);
-
+function sumar(){
+  return 1+1;
+}
   useEffect(() => {
     if (nombre) {
       fetch(`https://pokeapi.co/api/v2/pokemon/${nombre.toLowerCase()}/`)
